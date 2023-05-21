@@ -1,0 +1,44 @@
+@import "~bootswatch/dist/cosmo/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/cosmo/bootswatch";
+
+body {
+
+    font-family: "Noto Sans", serif;
+
+    font-weight: 300;
+}
+
+.btn {
+    @extend .rounded, .text-white;
+
+    &.btn-twitter {
+        background-color: #1DA1F2;
+
+        &:hover {
+            background-color: darken(#1DA1F2, 10%);
+        }
+    }
+
+    &.btn-linkedin {
+        background-color: #0077B5;
+
+        &:hover {
+            background-color: darken(#0077B5, 10%);
+        }
+    }
+}
+
+img {
+    @extend .img-fluid;
+}
+
+h2,
+p {
+    @extend .mb-3;
+}
+
+section {
+    padding: 2rem 0;
+
+}

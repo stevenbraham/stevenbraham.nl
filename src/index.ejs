@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="nl" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="canonical" href="https://stevenbraham.nl/" />
+    <title>
+        Steven Braham
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/website.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    Steven Braham
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <% const navLinks=[ { href: "#" , text: "Over mij" }, { href: "#" , text: "Opiniestukken" }, {
+                            href: "#" , text: "Contact opnemen" } ]; %>
+                            <% navLinks.forEach(link=> { %>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold text-primary" href="<%= link.href %>">
+                                        <%= link.text %>
+                                    </a>
+                                </li>
+                                <% }); %>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 ">
+
+
+    </main>
+    <main class="container mt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <section id="top">
+                    <div class="card card-body shadow-sm border-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="/images/Steven_Braham-removebg.png" alt="Steven Braham">
+                            </div>
+                        </div>
+                    </div>
+                    <% const buttons=[ { href: "https://twitter.com/steven_braham/" , icon: "fab fa-twitter" ,
+                        text: "Volg mij op Twitter" }, { href: "https://www.linkedin.com/in/stevenbraham/" ,
+                        icon: "fab fa-linkedin" , text: "Bekijk mijn CV op LinkedIn" }, {
+                        href: "mailto:steven.braham@example.com" , icon: "far fa-envelope" ,
+                        text: "Stuur mij een e-mail" } ]; %>
+                        <% buttons.forEach(button=> { %>
+                            <a href="<%= button.href %>" target="_blank" class="btn btn-primary">
+                                <i class="<%= button.icon %>"></i>
+                                <%= button.text %>
+                            </a>
+                            <% }); %>
+                                <a href="https://twitter.com/steven_braham/" target="_blank" class="btn btn-twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    Volg mij op Twitter
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/stevenbraham/" target="_blank"
+                                    class="btn btn-linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                    Bekijk mijn CV op LinkedIn
+                                </a>
+
+                                <a href="mailto:steven.braham@example.com" target="_blank" class="btn btn-primary">
+                                    <i class="far fa-envelope"></i>
+                                    Stuur mij een e-mail
+                                </a>
+                </section>
+                <section id="over-mij">
+
+                    <h2>
+                        Over mij
+                    </h2>
+                    <p>
+                        In het dagelijks leven ben ik werkzaam als software engineer. Ik ben gespecialiseerd in het
+                    </p>
+                    <p>
+                        Daarnaast ben ik actief bij de VVD Groningen. Van 2019 t/m 2021 ben ik bij de JOVD Groningen als
+                        bestuurslid
+                        geweest.
+                    </p>
+                </section>
+                <section id="opiniestukken">
+                    <h2>
+                        Opiniestukken
+                    </h2>
+                    <p>
+                        Af en toe schrijf ik opiniestukken en ingezonden brieven in verschillende media. Hieronder een
+                        overzicht van mijn gepubliceerde stukken:
+                    </p>
+
+                    <% const articles=[ { "date" :"2021-09-01", "title" :"Opinie: Groningen moet meer doen om de stad
+                        aantrekkelijk te houden voor jongeren", "link" : "" , "media" :"nrc" }, { "date"
+                        :"2021-09-01", "title" :"Opinie: Groningen moet meer doen om de stad aantrekkelijk te houden
+                        voor jongeren", "link" : "" , "media" :"nrc" }, { "date" :"2021-09-01", "title" :"Opinie:
+                        Groningen moet meer doen om de stad aantrekkelijk te houden voor jongeren", "link" : ""
+                        , "media" :"nrc" }, { "date" :"2021-09-01", "title" :"Opinie: Groningen moet meer doen om de
+                        stad aantrekkelijk te houden voor jongeren", "link" : "" , "media" :"nrc" }, { "date"
+                        :"2021-09-01", "title" :"Opinie: Groningen moet meer doen om de stad aantrekkelijk te houden
+                        voor jongeren", "link" : "" , "media" :"nrc" } ]; %>
+
+                        <% articles.forEach(article=> { %>
+                            <%= article.title %> - <%= article.media %>
+                                    <% }); %>
+                </section>
+
+
+                <section id="contact-opnemen">
+                    <h2>
+                        Contact opnemen
+                    </h2>
+                    <p>
+                        Ik ben heel actief <a href="https://twitter.com/steven_braham" target="_blank">op
+                            Twitter.</a> Daar
+                        kunt u
+                        mij een DM
+                        sturen.
+                        Ook kunt u op hallo@stevenbraham.nl een mail sturen.
+                    </p>
+                    <div class="text-center">
+                        <a href="mailto:hallo@stevenbraham.nl" class="btn btn-primary">
+                            <i class="fa-sharp fa-light fa-envelope"></i> Stuur een e-mail
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="/js/website.js" async></script>
+    <script src="https://kit.fontawesome.com/b56a886b23.js" crossorigin="anonymous" async> </script>
+</body>
+
+</html>
