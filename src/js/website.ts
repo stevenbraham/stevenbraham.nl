@@ -2,7 +2,7 @@ import LazyLoad from "vanilla-lazyload";
 import { Collapse } from "bootstrap.native";
 
 const lazyLoadInstance = new LazyLoad({
-  elements_selector: ".img-lazy",
+  elements_selector: "img",
   threshold: 50,
 });
 
