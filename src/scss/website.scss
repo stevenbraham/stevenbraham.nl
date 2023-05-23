@@ -46,3 +46,9 @@ section {
 #opiniestukken>hr:last-child {
     display: none;
 }
+
+#top {
+    img {
+        min-height: 300px; // prevent layout shift
+    }
+}
