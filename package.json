@@ -33,6 +33,6 @@
     "watch-poll": "mix watch -- --watch-options-poll=1000"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "My personal homepage"
 }
