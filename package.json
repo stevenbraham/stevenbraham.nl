@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@tsconfig/node18": "^1.0.1",
+    "@tsconfig/node21": "^21.0.1",
     "laravel-mix": "^6.0.49",
     "laravel-mix-ejs": "^2.0.1",
     "laravel-mix-purgecss": "^6.0.0",
@@ -20,7 +20,7 @@
     "sass-loader": "^12.6.0",
     "ts-loader": "^9.4.2",
     "tsconfig": "^7.0.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.3.3",
     "webpack": "^5.76.1"
   },
   "scripts": {
@@ -34,5 +34,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "My personal homepage"
 }
