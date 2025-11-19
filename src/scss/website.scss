@@ -1,9 +1,9 @@
 $web-font-path: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap';
 $font-family-sans-serif: "Noto Sans", serif;
 $font-weight-base: 300;
-@import "~bootswatch/dist/cosmo/variables";
-@import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/cosmo/bootswatch";
+@import "bootswatch/dist/cosmo/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/cosmo/bootswatch";
 
 .btn {
     @extend .rounded, .text-white;

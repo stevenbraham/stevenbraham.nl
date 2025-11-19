@@ -1,3 +1,4 @@
+import '../scss/website.scss';
 import LazyLoad from "vanilla-lazyload";
 
 const lazyLoadInstance = new LazyLoad({
