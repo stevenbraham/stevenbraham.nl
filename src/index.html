@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="nl" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="canonical" href="https://stevenbraham.nl/" />
+    <title>
+        Steven Braham
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="preload"
+        as="style">
+    <meta name="image" content="https://stevenbraham.nl/images/steven-braham.webp" />
+    <meta name="description"
+        content="Steven Braham is een software ontwikkelaar en online ondernemer uit Groningen. Daarnaast is hij politiek actief bij de VVD en JOVD.">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+                        <a class="navbar-brand" href="/">
+                            Steven Braham
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <% const navLinks=[ { href: "#over-mij" , text: "Over mij" }, { href: "#opiniestukken" ,
+                                    text: "Opiniestukken" }, { href: "#contact-opnemen" , text: "Contact opnemen" } ];
+                                    %>
+                                    <% navLinks.forEach(link=> { %>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-bold text-primary" href="<%= link.href %>">
+                                                <%= link.text %>
+                                            </a>
+                                        </li>
+                                        <% }); %>
+                            </ul>
+
+                        </div>
+
+                    </nav>
+                </header>
+                <hr class="mt-0" />
+                <main class=" pb-5">
+
+                    <section id="top">
+
+
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col text-center ">
+                                <h1 class="text-primary fw-bold">
+                                    Steven Braham
+                                </h1>
+                                <h3 class="fw-light mb-md-0">
+                                    <i class="fa-sharp fa-light fa-location-dot"></i> Groningen
+                                </h3>
+                            </div>
+                            <div class="col-md-6 col-8">
+
+                                <img data-src="/images/steven-braham.webp" alt="Steven Braham" class="rounded" />
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+
+                            <% const buttons=[ { href: "https://twitter.com/steven_braham/" , icon: "fab fa-twitter"
+                                , 'class' :"btn-twitter" , text: "Volg mij op Twitter" }, {
+                                href: "https://www.linkedin.com/in/stevenbraham/" ,'class':"btn-linkedin" ,
+                                icon: "fab fa-linkedin" , text: "Bekijk mijn CV" }, {
+                                href: "mailto:steven.braham@example.com" , icon: "far fa-envelope" , 'class'
+                                :"btn-primary" , text: "Stuur een e-mail" } ]; %>
+                                <% buttons.forEach(button=> { %>
+                                    <div class="col-md">
+                                        <a href="<%= button.href %>" target="_blank"
+                                            class="btn d-block w-100 mt-3 <%= button.class %>">
+                                            <i class="<%= button.icon %>"></i>
+                                            <%= button.text %>
+                                        </a>
+                                    </div>
+                                    <% }); %>
+                        </div>
+
+                    </section>
+                    <section id="over-mij">
+                        <h2>Over mij</h2>
+                        <p>
+                            Ik ben geboren in <b class="fw-bold">1997</b> en
+                            woon momenteel in
+                            <b class="fw-bold">Groningen</b>. In het
+                            dagelijks leven ben ik werkzaam als ZZP software
+                            ontwikkelaar en
+                            <b class="fw-boldonline ondernemer">online ondernemer</b>. Mijn
+                            specialisaties zijn PHP (Laravel en Yii),
+                            Vue.js, AWS en conversie optimalisatie. In 2017
+                            en 2018 ben ik opgenomen in de lijst van de
+                            <b class="fw-bold">TNW TOP 500 jonge IT talenten</b>
+                            van Nederland
+                        </p>
+                        <p>
+                            Daarnaast ben ik ook politiek actief. Sinds 2018
+                            ben ik lid van de
+                            <b class="fw-bold">JOVD en VVD Groningen</b>.
+                            Bij de JOVD Groningen heb ik mij van 2019 t/m
+                            2021 ingezet als bestuurslid. In 2023 was ik
+                            kandidaat bij de Provinciale Statenverkiezingen
+                            in Groningen. In 2023 / 2024 zat ik bij de 24e
+                            lichting van de
+                            <a class="fw-bold" href="https://bkb.nl/bkb-academie/" target="_blank" rel="nofollow">BKB
+                                Academie</a>. Dit is een opleidingsprogramma voor jonge
+                            mensen die zich willen ontwikkelen in de
+                            politiek en het publieke domein.
+                        </p>
+                        <p>
+                            Daarnaast volg ik momenteel part-time de
+                            bachelor Geschiedenis aan de
+                            <b class="fw-bold">Rijksuniversiteit Groningen</b>. En ben ik sinds de zomer van 2025 actief
+                            als <b class="fw-bold"></b>Algemeen Bestuurslid</b>
+                            bij het VVD netwerk Groningen - Haren.
+                        </p>
+                    </section>
+                    <section id="opiniestukken">
+                        <h2>
+                            Opiniestukken
+                        </h2>
+                        <p class="mb-5">
+                            Af en toe schrijf ik opiniestukken en ingezonden brieven. Hieronder een
+                            overzicht van gepubliceerde stukken in landelijke media:
+                        </p>
+                        <% articles=[ { "date" : "03-01-2024" , "title"
+                            : "De spreidingswet is noodzakelijk en juist heel liberaal" , "link"
+                            : "https://www.ewmagazine.nl/ewpodium/opinie/2024/01/de-spreidingswet-is-noodzakelijk-en-juist-heel-liberaal-1384683/"
+                            , "media" : "ew" },{ "date" : "02-11-2023" , "title"
+                            : "De klimaatactivist doet zijn zaak meer kwaad dan goed" , "link"
+                            : "https://www.ewmagazine.nl/ewpodium/opinie/2023/11/de-klimaatactivist-doet-zijn-zaak-meer-kwaad-dan-goed-1374655/"
+                            , "media" : "ew" }, { "date" : "25-08-2023" , "title"
+                            : "Mevrouw Yeşilgöz, kies alstublieft voor realisme in plaats van populisme" , "link"
+                            : "https://www.ewmagazine.nl/ewpodium/opinie/2023/08/ew-podium-mevrouw-yesilgoz-kies-alstublieft-voor-realisme-in-plaats-van-populisme-1052933/"
+                            , "media" : "ew" } ,{ "date" : "08-05-2023" , "title"
+                            : "Onderschat ook die andere vorm van AI niet: nepbeelden" , "link"
+                            : "https://www.ewmagazine.nl/ewpodium/blog/2023/05/onderschat-ook-die-andere-vorm-van-ai-niet-nepbeelden-1040105/"
+                            , "media" : "ew" } , { "date" : "29-03-2023" , "title"
+                            : "Kritiek VVD op Van der Wal treurig" , "link"
+                            : "https://www.telegraaf.nl/watuzegt/1031724014/kritiek-vvd-op-van-der-wal-treurig"
+                            , "media" : "telegraaf" }, { "date" : "21-11-2022" , "title"
+                            : "Sociale media zijn veel meer dan het vergif dat we willen zien" , "link"
+                            : "https://www.ewmagazine.nl/ewpodium/opinie/2022/11/sociale-media-veel-meer-dan-het-vergif-dat-we-willen-zien-910922/"
+                            , "media" : "ew" }, { "date" : "10-11-2022" , "title" : "Beschamende vertoning" , "link"
+                            : "https://www.nrc.nl/nieuws/2022/11/10/vvd-beschamende-vertoning-a4147820" , "media"
+                            : "nrc" }, { "date" : "19-08-2022" , "title" : "Hoge energieprijzen zijn een geschenk"
+                            , "link"
+                            : "https://www.nrc.nl/nieuws/2022/08/19/hoge-energieprijzen-zijn-een-geschenk-a4139381"
+                            , "media" : "nrc" }, { "date" : "23-03-2022" , "title" : "Geen opkomstplicht" , "link"
+                            : "https://www.nrc.nl/nieuws/2022/03/23/verkiezingen-geen-opkomstplicht-a4104022" , "media"
+                            : "nrc" } ] %>
+                            <% articles.forEach(article=> { %>
+
+                                <div class="row align-items-center">
+                                    <div class="col-2 col-md-1">
+                                        <a href="<%= article.link %>" target="_blank">
+
+                                            <img data-src="/images/<%= article.media %>.svg" class="w-100"
+                                                title="<%= article.media %>" alt="<%= article.media %>" /> </a>
+                                    </div>
+                                    <div class="col">
+                                        <b class="fw-bold">
+                                            <p class="mb-0">
+                                                <a href="<%= article.link %>" target="_blank">
+                                                    <%= article.title %>
+                                                </a>
+                                            </p>
+                                            <p class="mb-0">
+                                                <small class="text-muted fw-light">
+                                                    <%= article.date %>
+                                                </small>
+                                            </p>
+                                        </b>
+                                    </div>
+
+                                </div>
+
+                                <hr />
+                                <% }); %>
+                    </section>
+
+
+                    <section id="contact-opnemen">
+                        <h2>
+                            Contact opnemen
+                        </h2>
+                        <p class="mb-4">
+                            Ik ben heel actief <a href="https://twitter.com/steven_braham" target="_blank">op
+                                Twitter.</a> Daar
+                            kunt u
+                            mij een DM
+                            sturen.
+                            Ook kunt u een e-mail sturen naar <a
+                                href="mailto:hallo@stevenbraham.nl">hallo@stevenbraham.nl</a>.
+                        </p>
+                        <div class="text-center">
+                            <a href="mailto:hallo@stevenbraham.nl" class="btn btn-primary">
+                                <i class="fa-sharp fa-light fa-envelope"></i> Stuur een e-mail
+                            </a>
+                        </div>
+                    </section>
+
+
+
+                </main>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="/src/js/website.ts"></script>
+    <script src="https://kit.fontawesome.com/b56a886b23.js" crossorigin="anonymous" async> </script>
+    <script async>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WKND9CP5');</script>
+</body>
+
+</html>
